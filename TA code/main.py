@@ -63,7 +63,7 @@ def main():
         y_pred_classes = clf_tree.predict(X_test)
         accuracy_ = accuracy_score(y_test, y_pred_classes)
         Accuracy.append(accuracy_)
-        logger.info(f'DecisionTree | max_depth={depth} | Accuracy: {accuracy_:.4f}')
+        logger.info(f'DecisionTree | max_depth={depth:2d} | Accuracy: {accuracy_:.4f}')
     # (TODO) Draw the plot of different max_depth
     plt.figure(figsize=(8, 8))
     plt.plot(max_depths, Accuracy)
