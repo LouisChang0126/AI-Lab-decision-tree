@@ -1,1 +1,2 @@
-# AI-Lab-decision-tree
+# Intro to AI \[Lab1\] Decision tree
+
