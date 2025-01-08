@@ -11,7 +11,7 @@ Notice:
     3) You can ignore the suggested data type if you want
 """
 
-def preprocess(df: pd.DataFrame)->pd.DataFrame:
+def data_prepare(df: pd.DataFrame)->pd.DataFrame:
     # (TODO): You need to change the string inside df into number,
     #         for example: change satisfied in df['satisfaction'] into 1, dissatisfied into 0
     raise NotImplementedError
@@ -28,8 +28,8 @@ def main():
     train_df = pd.read_csv('./train.csv')
     test_df = pd.read_csv('./test.csv')
 
-    train_df = preprocess(train_df)
-    test_df = preprocess(test_df)
+    train_df = data_prepare(train_df)
+    test_df = data_prepare(test_df)
 
     X_train = train_df.drop(['satisfaction'], axis=1)
     y_train = train_df['satisfaction'].to_numpy()

@@ -22,7 +22,6 @@ class DecisionTree:
         # (TODO) Traverse the decision tree to return the classes of the testing dataset
         raise NotImplementedError
 
-
 def find_best_split(X: pd.DataFrame, y: np.ndarray):
     # (TODO) Find the best split for a dataset
     raise NotImplementedError
